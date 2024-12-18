@@ -1,0 +1,40 @@
+{
+    "recipes":[
+       {
+        "id": "1",
+        "title": "Veggie Stew",
+        "ingredients": [
+            "1 Carrot",
+            "1 Leek",
+            "200g Tofu",
+            "300ml Veg Stock"
+        ],
+        "method": "1. pre-heat the oven to 200C ...",
+        "cookingTime": "45 minutes"
+       },
+       {
+        "id": "2",
+        "title": "Ghorme sabzi",
+        "ingredients": [
+            "1 Onions",
+            "100g Herbs",
+            "200g Beef",
+            "300ml Red Kidney Beans"
+        ],
+        "method": "To a 6-quart dutch oven or larger, add 3 tablespoons of olive oil over medium heat ...",
+        "cookingTime": "3 hours"
+       },
+       {
+        "id": "3",
+        "title": "Tahchin",
+        "ingredients": [
+            "2 Cups rice",
+            "1 Onion",
+            "1 Chicken",
+            "1 cup Barberry"
+        ],
+        "method": "In a shallow mixing bowl, combine 2 tablespoons yogurt with 1 teaspoon cumin, the turmeric, 1 teaspoon salt, 2 tablespoons of lemon juice, and the grated onion and its juices. Add the chicken ...",
+        "cookingTime": "2 hours"
+       }
+    ]
+}

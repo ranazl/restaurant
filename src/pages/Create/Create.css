@@ -31,3 +31,16 @@
 .formStyle{
     padding-bottom: 10px;
 }
+
+.ingredients{
+    display: flex;
+    align-items: center;
+}
+
+.ingredients button{
+    margin: 0 0 0 10px;
+}
+
+.addBtn{
+    width: 70% !important;
+}

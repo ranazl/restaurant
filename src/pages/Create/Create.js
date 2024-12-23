@@ -1,13 +1,36 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./Create.css"
+import { useFetch } from '../../hooks/useFetch';
+import { useNavigate } from 'react-router-dom';
 
 export default function Create() {
   const [title,setTitle] = useState('')
   const [method, setMethod] = useState('')
   const [cookingTime,setCookingTime] = useState('')
+  const [ingredients,setIngredients] = useState([])
+  const [newIngredient,setNewIngredient] = useState('')
+
+  const navigate = useNavigate()
+
+  const {postData, data, error} = useFetch('http://localhost:3000/recipes', 'POST')
+
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(title,method,cookingTime)
+    postData({title, ingredients, method, cookingTime: cookingTime + ' minutes'})
+  }
+
+  useEffect (() => {
+    if(data){
+      navigate('/')
+    }
+  },[data])
+
+  const handleAdd = (e) => {
+    e.preventDefault()
+    if(newIngredient && !ingredients.includes(newIngredient)){
+      setIngredients(preIngredient => [...preIngredient,newIngredient])
+    }
+    setNewIngredient('')
   }
 
   return (
@@ -24,6 +47,18 @@ export default function Create() {
             required
           />
         </label>
+
+        <label>
+          <span> Recipe ingredients: </span>
+            <div className='ingredients'>
+              <input type='text'
+                onChange={(e) => setNewIngredient(e.target.value)}
+                value={newIngredient}
+              />
+              <button className='addBtn' onClick={handleAdd}>Add</button>
+            </div>
+        </label>
+        <p>Current ingredients: {ingredients.map(i => <em key={i}>{i}, </em>)}</p>
 
         <label>
           <span> Recipe method: </span>

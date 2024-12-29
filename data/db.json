@@ -35,6 +35,17 @@
       ],
       "method": "In a shallow mixing bowl, combine 2 tablespoons yogurt with 1 teaspoon cumin, the turmeric, 1 teaspoon salt, 2 tablespoons of lemon juice, and the grated onion and its juices. Add the chicken ...",
       "cookingTime": "2 hours"
+    },
+    {
+      "id": "8580",
+      "title": "simple salad",
+      "ingredients": [
+        "cabage",
+        "tomato",
+        "cucumber"
+      ],
+      "method": "mix all together",
+      "cookingTime": "5 minutes"
     }
   ]
 }

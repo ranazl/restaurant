@@ -9,7 +9,7 @@ export default function Searchbar() {
     
     const handleSubmite = (e) => {
         e.preventDefault()
-        navigate(`/search?q=${searchTerm}`)
+        navigate(`/Search?q=${searchTerm}`)
     }
 
   return (
@@ -20,7 +20,7 @@ export default function Searchbar() {
             id='search'
             type='text'
             onChange={(e) => setSearchTerm(e.target.value)}
-            value={searchTerm}
+            // value={searchTerm}
             required
         />
       </form>

@@ -2,10 +2,12 @@ import React, { useEffect, useState } from 'react';
 import "./Create.css"
 import { useFetch } from '../../hooks/useFetch';
 import { useNavigate } from 'react-router-dom';
+import axios from "axios";
 
 export default function Create() {
   const [title,setTitle] = useState('')
   const [method, setMethod] = useState('')
+  const [image,setImage] = useState('')
   const [cookingTime,setCookingTime] = useState('')
   const [ingredients,setIngredients] = useState([])
   const [newIngredient,setNewIngredient] = useState('')
@@ -33,6 +35,16 @@ export default function Create() {
     setNewIngredient('')
   }
 
+  const handleImg = (e) =>{
+    setImage(e.target.files[0])
+  }
+
+  // const handleAddImg = (e) => {
+  //   const formData = new FormData()
+  //   formData.append('image', image)
+  //   axios.post('url', formData)
+  // }
+
   return (
     <div className='create'>
       <h2 className='page-title'> Add a new Recipe </h2>
@@ -46,6 +58,17 @@ export default function Create() {
             value={title}
             required
           />
+        </label>
+
+        <label>
+          <span> Add Image: </span>
+          <input
+            type='file'
+            onChange={handleImg}
+            value={title}
+            required
+          />
+          {/* <button className='addBtn' onClick={handleAddImg}>Add</button> */}
         </label>
 
         <label>

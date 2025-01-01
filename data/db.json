@@ -2,15 +2,16 @@
   "recipes": [
     {
       "id": "1",
-      "title": "Veggie Stew",
+      "title": "Pasta",
       "ingredients": [
-        "1 Carrot",
-        "1 Leek",
-        "200g Tofu",
-        "300ml Veg Stock"
+        "2oog pasta",
+        "4 garlic cloves",
+        "100g Mashroom",
+        "¾ cup heavy cream"
       ],
-      "method": "1. pre-heat the oven to 200C ...",
-      "cookingTime": "45 minutes"
+      "method": "Heat olive oil in a medium pan over medium heat. Add garlic and stir until fragrant, 1 to 2 minutes. Add butter and stir constantly until melted.",
+      "cookingTime": "30 minutes",
+      "image":"/assets/pasta.jpg"
     },
     {
       "id": "2",
@@ -22,7 +23,8 @@
         "300ml Red Kidney Beans"
       ],
       "method": "To a 6-quart dutch oven or larger, add 3 tablespoons of olive oil over medium heat ...",
-      "cookingTime": "3 hours"
+      "cookingTime": "3 hours",
+      "image":"/assets/ghorme.jpg"
     },
     {
       "id": "3",
@@ -34,18 +36,8 @@
         "1 cup Barberry"
       ],
       "method": "In a shallow mixing bowl, combine 2 tablespoons yogurt with 1 teaspoon cumin, the turmeric, 1 teaspoon salt, 2 tablespoons of lemon juice, and the grated onion and its juices. Add the chicken ...",
-      "cookingTime": "2 hours"
-    },
-    {
-      "id": "8580",
-      "title": "simple salad",
-      "ingredients": [
-        "cabage",
-        "tomato",
-        "cucumber"
-      ],
-      "method": "mix all together",
-      "cookingTime": "5 minutes"
+      "cookingTime": "2 hours",
+      "image":"/assets/tahchin.jpg"
     }
   ]
 }

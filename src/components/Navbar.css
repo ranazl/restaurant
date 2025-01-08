@@ -1,8 +1,9 @@
 .navbar{
-    background-image:url("../../public/assets/bachground.jpg");
+    background-image:url("../../public/assets/background.jpg");
+    /* background-color: #0a1121; */
     padding: 20px;
     color: #fff;
-    height: 250px;
+    height: 300px;
 }
 
 .navbar nav{
@@ -21,8 +22,8 @@
 .navbar a:last-child{
     color: #fff;
     text-decoration: none;
-    margin-left: 40px;
-    padding: 8px;
+    margin-left: 5px;
+    padding: 7px;
     border: 1px solid #fff;
     border-radius: 4px;
 }
@@ -30,4 +31,13 @@
 .navbar a:last-child:hover{
     background-color: #fff;
     color: #333;
+}
+
+.headerText{
+    margin: 70px;
+    text-shadow: 10px 10px 10px #302817;
+}
+
+.moreBtn{
+    background-color: #99673d !important;
 }

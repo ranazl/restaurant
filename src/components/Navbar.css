@@ -33,11 +33,18 @@
     color: #333;
 }
 
-.headerText{
+.headerContainer {
+    display: flex;
+    align-items: center;
+    gap: 60px;
     margin: 70px;
+}
+
+.headerText {
+    margin: 0;
     text-shadow: 10px 10px 10px #302817;
 }
 
-.moreBtn{
+.moreBtn {
     background-color: #99673d !important;
 }

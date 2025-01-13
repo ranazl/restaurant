@@ -3,6 +3,8 @@
     align-items: center;
 }
 
-.searchbar input{
+.searchbar input {
     margin-left: 10px;
+    width: 60%;
+    border-radius: 20px;
 }

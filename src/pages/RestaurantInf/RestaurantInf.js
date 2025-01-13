@@ -3,7 +3,7 @@ import './RestaurantInf.css'
 
 export default function RestaurantInf() {
   return (
-    <div className='card'>
+    <div className='cardInf'>
 We offer a full and unique menu from breakfast to diner, coffee shop and delicious
 desserts in various beautiful halls and grand terrace with a fullview of Tehran. Shandiz's menu
 includes a variety of Persian and international cuisine. The restaurant marks an unforgettable
